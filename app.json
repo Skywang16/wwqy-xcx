@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/news/news",
+    "pages/newsDetail/newsDetail",
+    "pages/skinDetail/skinDetail"
+  ],
+  "window":{    
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "无畏契约",
+    "navigationBarTextStyle":"white"
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#fd4453",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-fill.png"
+      },{
+        "text": "分类",
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/all.png",
+        "selectedIconPath": "images/all-fill.png"
+      },{
+        "text": "资讯",
+        "pagePath": "pages/news/news",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news-fill.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "wwqy-header":"components/wwqy-header/wwqy-header",
+    "wwqy-news-item":"components/wwqy-news-item/wwqy-news-item",
+    "wwqy-footer":"components/wwqy-footer/wwqy-footer",
+    "wwqy-skin-item":"components/wwqy-skin-item/wwqy-skin-item",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  }
+}

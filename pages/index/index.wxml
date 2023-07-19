@@ -1,0 +1,76 @@
+<wwqy-header></wwqy-header>
+
+<view class="banner">
+  <swiper
+  previous-margin="30rpx"
+  circular
+  autoplay
+  interval="3000"
+  indicator-dots
+  indicator-active-color="#BDA066"
+  indicator-color="rgba(255,255,255,0.3)"
+  >
+    <swiper-item>
+      <image src="/images/banner0.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner1.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner2.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner3.jpg" mode=""/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="scrollNav">
+  <scroll-view scroll-x>
+
+    <navigator	open-type="reLaunch" 
+    url="/pages/classify/classify?idx={{index}}" 
+    class="item" wx:for="{{navArr}}" wx:key="_id">
+      <view class="pic">
+        <image src="{{item.icon}}" mode=""/>
+      </view>
+      <view class="text">
+        {{item.classname}}
+      </view>
+    </navigator>
+
+  </scroll-view>
+</view>
+
+
+<view class="about">
+  <view class="pubTitle">
+    <view class="en">VALORANT</view>
+    <view class="cn">无畏契约</view>
+    <view class="line"></view>
+  </view>
+
+  <view class="content">
+    <view class="row">《无畏契约》国服，又名valorant、瓦罗兰特，是《英雄联盟》开发商拳头游戏开发、腾讯代理、风靡全球的PC端战术射击力作。</view>
+    <view class="row">以英雄角色为核心的 5v5 的战术射击免费网游，采用FPS经典“爆破模式”作为核心玩法，玩家将化身技能各异的战术英雄，使用不同类型的武器枪械参与战斗。</view>
+  </view>
+
+</view>
+
+
+
+<view class="news">
+  <view class="pubTitle">
+    <view class="en">News</view>
+    <view class="cn">游戏资讯</view>
+    <view class="line"></view>
+  </view>
+  <view class="content">
+    <view class="box" wx:for="{{newsArr}}" wx:key="index">       
+      <wwqy-news-item item="{{item}}"></wwqy-news-item>
+    </view>
+  </view>
+</view>
+
+
+<wwqy-footer></wwqy-footer>

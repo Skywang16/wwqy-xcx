@@ -1,0 +1,39 @@
+<wwqy-header></wwqy-header>
+
+<view style="padding:50rpx 30rpx; min-height: 50vh;">
+  <van-skeleton title row="5" />
+</view>
+
+<view class="detail">
+  <view class="banner">
+    <image src="/images/propic.png"></image>
+  </view>
+
+  <view class="textMain">
+    <view class="title">
+      {{detail.title}}
+    </view>
+
+    <view class="text">
+    
+        <view class="row">
+          <view class="left"><text space="emsp">等 级：</text></view>
+          <view class="right">限定</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">价 格：</text></view>
+          <view class="right">3550</view>
+        </view>
+
+        <view class="row">
+          <view class="left"><text space="emsp">系 列：</text></view>
+          <view class="right">黑市</view>
+        </view>
+
+    </view>
+  </view>
+</view>
+
+
+<wwqy-footer></wwqy-footer>

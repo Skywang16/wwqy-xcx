@@ -1,0 +1,26 @@
+<view class="product" bind:tap="clickPro" data-id="{{item._id}}">
+  <view class="pic">
+    <image class="image" mode="widthFix" src="{{item.picpath}}"></image>
+  </view>
+  <view class="text">
+    <view class="title">{{item.title}}</view>
+    <view class="info">
+
+      <view class="row">
+        <view class="left"><text space="emsp">等 级：</text></view>
+        <view class="right">{{item.geade}}</view>
+      </view>
+
+
+      <view class="row">
+        <view class="left">价 格：</view>
+        <view class="right">{{item.price}}</view>
+      </view>
+
+      <view class="row">
+        <view class="left">系 列：</view>
+        <view class="right">{{item.series}}</view>
+      </view> 
+    </view>
+  </view>
+</view>
